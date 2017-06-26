@@ -12,7 +12,6 @@ public class IntegerUtils {
         if (x == (x & arg)) {
             result += 1;
         }
-
         return result;
     }
 }
