@@ -21,6 +21,10 @@ public class ArrayFilter {
                 result[evenCount++] = nums[i];
             }
         }
+        // Make exact size copy
+        int[] tmp = new int[evenCount];
+        System.arraycopy(result, 0, tmp, 0, evenCount);
+
         return result;
     }
 }
